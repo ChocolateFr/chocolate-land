@@ -1,0 +1,19 @@
+* {
+
+
+    element-icon: 64px;  /* Adjust the size as needed */
+}
+
+
+
+element-icon { size: 350px ; } 
+listview {
+  columns:  3;
+  }
+element{
+chilren:['element-icon'];
+}
+window {
+  width: 60%;
+  height: 45%;
+}

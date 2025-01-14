@@ -1,0 +1,82 @@
+configuration{
+  show-icons:true;
+  drun-display-format: "{icon} {name}";
+}
+* {
+  font: "JetBrainsMono Nerd Font 17";
+  base: {base};
+  base-alt:{base_light};
+  border: {borders};
+  text: {text};
+  highlight:{highlight};
+  blue:{blue};
+  border:0px solid;
+}
+entry {
+  background-color: @base;
+  padding:5px; 
+  text-color: @text;
+
+}
+
+window {
+  width:33.33%;
+  height:100%;
+  padding: 30px;
+  columns:3;
+  x-offset:34.33%;
+  y-offset:-3.3%;
+  background-color: @base;
+  border: 0 solid 0px ;
+  border-color:@highlight;
+}
+inputbar {
+  enabled: false;
+}
+listview{
+  columns:3;
+  fixed-columns:true;
+  spacing:5px;
+  margin:90px 0 0 0;
+}
+element{
+  width:64px;  
+  padding:10px; 
+  margin:2px;
+  
+  background-color:@base;
+  orientation: vertical;
+}
+element-text{
+  text-color:@text;
+  vertical-align:              0.5;
+  horizontal-align:            0.5;
+}
+element-icon{
+  size:64px;  
+}
+button {
+  background-color: @base-alt;
+  text-color:@highlight;
+}
+
+#element.normal.normal{
+  border-radius:30px;
+  background-color:@base;
+  border:0px solid;
+  border-color:@highlight;
+}
+#element.alternate.normal{
+  background-color:@base;
+
+}
+#element.normal.selected{
+  background-color:@highlight;
+}
+#textbox-prompt-colon {
+	expand:     true;
+	str:        " ";
+	text-color: @text;
+}
+
+

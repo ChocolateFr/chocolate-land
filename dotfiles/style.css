@@ -1,0 +1,18 @@
+*{
+
+  color:{text};
+  margin: 0 5px;
+  font-family:"JetBrainsMono Nerd Font Mono";
+}
+
+#workspaces button {
+  margin:0;
+  padding: 0;
+  font-size:12px;
+}
+#waybar {
+	background:{base};
+	padding-top:20px;
+}
+
+

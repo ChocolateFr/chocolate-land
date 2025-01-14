@@ -1,0 +1,77 @@
+{
+  "position": "bottom",
+    "modules-left": ["custom/arch","custom/weather"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "custom/div","network","custom/div", "battery","custom/div", "custom/clock"], 
+    "hyprland/workspaces": {
+      "format": "{name}",
+      "format": "{icon}",
+      "tooltip": "{name}",
+      "all-outputs": true,
+      "format-icons": {
+        "1":"󰬺",
+        "2": "󰬻",
+        "3": "󰬼",
+        "4": "󰬽",
+        "5": "󰬾",
+        "6": "󰬿",
+        "7": "󰭀",
+        "8": "󰭁",
+        "9": "󰭂",
+        "10": "󰿩",
+        "active": "",
+        "default": ""
+      }
+    },
+    "custom/div":{
+      "format":"{}",
+      "exec":"echo '|'"
+    },
+    "custom/clock": {
+      "format": "{}",
+      "interval":1,
+      "exec":"python $HOME/.config/scripts/clock.py"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "",
+      "format-tooltip": "{volume}%",
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1,
+    },
+    "bluetooth": {
+      "format": "",
+      "format-disabled": "󰂲",
+      "format-connected": " {num_connections}",
+      "tooltip-format": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+    },
+    "network": {
+      "interface": "wlan0",
+      "format": "{ifname}",
+      "format-wifi": "{ipaddr}",
+      "format-ethernet": "{ipaddr}/{cidr} ",
+      "format-disconnected": "󰖪 ",
+      "format-tooltip": "{essid}",
+    },
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "format-charging": " {capacity}%",
+      "tooltip": false,
+      "interval":1,
+    },
+    "custom/arch":{
+      "format":"{}",
+      "exec":"bash $HOME/.config/scripts/system.sh",
+      "interval": 3,
+    },
+    "custom/weather":{
+      "format":"{}",
+      "exec": "bash $HOME/.config/scripts/weather.sh",
+      "interval":3600,
+    }
+}

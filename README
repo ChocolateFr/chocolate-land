@@ -1,0 +1,8 @@
+# Installation
+```bash
+git clone https://github.com/chocolatefr/choco-land
+cd choco-land
+cp .chocorc ~
+pip install watchdict --break-system-packages
+python main.py
+```

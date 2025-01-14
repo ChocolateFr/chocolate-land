@@ -1,0 +1,10 @@
+{
+    "base": "#1f1d2e",
+    "base_light": "#f1e6f2",
+    "borders": "#2e2a41",
+    "text": "#e0dfe5",
+    "highlight": "#ff9e64",
+    "blue": "#86c0d1",
+    "border_width": 2
+}
+
